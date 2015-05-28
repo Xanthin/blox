@@ -93,7 +93,7 @@ local NodeMaterial = {
 
 minetest.register_node("blox:glowstone", {
 	description = "Glowstone",
-	tile_images = {"blox_glowstone.png"},
+	tiles = {"blox_glowstone.png"},
 	--inventory_image = "blox_glowstone.png",
 	light_propagates = true,
 	paramtype = "light",
@@ -106,7 +106,7 @@ minetest.register_node("blox:glowstone", {
 
 minetest.register_node("blox:glowore", {
 	description = "Glow Ore",
-	tile_images = {"default_stone.png^blox_glowore.png"},
+	tiles = {"default_stone.png^blox_glowore.png"},
 	--inventory_image = {"default_stone.png^blox_glowore.png"},
 	light_propagates = true,
 	paramtype = "light",
@@ -132,7 +132,7 @@ minetest.register_node("blox:glowore", {
 minetest.register_node("blox:glowdust", {
 	description = "Glow Dust",
 	drawtype = "plantlike",
-	tile_images = {"blox_glowdust.png"},
+	tiles = {"blox_glowdust.png"},
 	inventory_image = "blox_glowdust.png",
 	light_propagates = true,
 	paramtype = "light",
@@ -150,7 +150,7 @@ for _, NClass in ipairs(NodeClass) do
 
 	minetest.register_node('blox:' .. cname, {
 		description = colour .. " " .. NClass .. " stone block",
-		tile_images = { 'blox_' .. cname .. '.png' },
+		tiles = { 'blox_' .. cname .. '.png' },
 		--inventory_image = 'blox_' .. cname .. '.png',
 		is_ground_content = true,
 		groups = {cracky=3, not_in_creative_inventory=creative},
@@ -161,7 +161,7 @@ for _, NClass in ipairs(NodeClass) do
 
 	minetest.register_node('blox:' .. sname, {
 		description = colour .. " " .. NClass .. " cobble block",
-		tile_images = { 'blox_' .. sname .. '.png' },
+		tiles = { 'blox_' .. sname .. '.png' },
 		--inventory_image = 'blox_' .. sname .. '.png',
 		is_ground_content = true,
 		groups = {cracky=3, not_in_creative_inventory=creative},
@@ -172,7 +172,7 @@ for _, NClass in ipairs(NodeClass) do
 
 	minetest.register_node('blox:' .. sname, {
 		description = colour .. " " .. NClass .. " wooden block",
-		tile_images = { 'blox_' .. sname .. '.png' },
+		tiles = { 'blox_' .. sname .. '.png' },
 		--inventory_image = 'blox_' .. sname .. '.png',
 		is_ground_content = true,
 		groups = {snappy=2,choppy=2,oddly_breakable_by_hand=2,flammable=3, not_in_creative_inventory=creative},
@@ -187,7 +187,7 @@ end
 
 	minetest.register_node('blox:' .. sname, {
 		description = colour .. " stone square",
-		tile_images = { 'blox_' .. sname .. '.png' },
+		tiles = { 'blox_' .. sname .. '.png' },
 		--inventory_image = 'blox_' .. sname .. '.png',
 		is_ground_content = true,
 		groups = {cracky=3, not_in_creative_inventory=creative},
@@ -198,7 +198,7 @@ end
 
 	minetest.register_node('blox:' .. sname, {
 		description = colour .. " stone",
-		tile_images = { 'blox_' .. sname .. '.png' },
+		tiles = { 'blox_' .. sname .. '.png' },
 		--inventory_image = 'blox_' .. sname .. '.png',
 		is_ground_content = true,
 		groups = {cracky=3, not_in_creative_inventory=creative},
@@ -209,7 +209,7 @@ end
 
 	minetest.register_node('blox:' .. sname, {
 		description = colour .. " wood",
-		tile_images = { 'blox_' .. sname .. '.png' },
+		tiles = { 'blox_' .. sname .. '.png' },
 		--inventory_image = 'blox_' .. sname .. '.png',
 		is_ground_content = true,
 		groups = {snappy=2,choppy=2,oddly_breakable_by_hand=2,flammable=3, not_in_creative_inventory=creative},
@@ -220,7 +220,7 @@ end
 
 	minetest.register_node('blox:' .. sname, {
 		description = colour .. " cobble",
-		tile_images = { 'blox_' .. sname .. '.png' },
+		tiles = { 'blox_' .. sname .. '.png' },
 		--inventory_image = 'blox_' .. sname .. '.png',
 		is_ground_content = true,
 		groups = {cracky=3, not_in_creative_inventory=creative},
